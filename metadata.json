@@ -1,0 +1,6 @@
+{
+  "name": "ScholarMatch - Government Scholarship Finder",
+  "description": "Find official government scholarships in India you actually qualify for based on state, degree, category, and income cutoffs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

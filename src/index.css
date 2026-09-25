@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  html {
+    font-family: var(--font-sans);
+    background-color: transparent;
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    line-height: 1.55;
+    background-color: transparent;
+    color: #0f172a;
+    overflow-x: hidden;
+  }
+
+  p, li, dd {
+    line-height: 1.55;
+  }
+}
+
+/* Anime.js Selector Demo Hardware Acceleration */
+#selector-demo {
+  transform-origin: right center;
+  will-change: transform, opacity;
+}
+
+#selector-demo .square {
+  will-change: transform, opacity;
+}
+
+/* Print layout for clean document checklist export */
+@media print {
+  header, footer, #quick-checker, #product-proof, #faq, button, canvas {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
